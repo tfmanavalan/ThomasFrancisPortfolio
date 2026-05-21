@@ -1,0 +1,6 @@
+# Ignore files for gcloud deployment
+.git
+.gitignore
+README.md
+*.md
+.DS_Store
