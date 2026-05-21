@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  PROJECT_ID: thomas-francis-portfolio
   SERVICE_NAME: thomas-francis-portfolio
   REGION: us-central1
 
