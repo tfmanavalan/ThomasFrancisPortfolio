@@ -424,6 +424,58 @@
             font-size: 0.8rem;
         }
 
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .cert-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 4px solid var(--primary-light);
+            text-align: center;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cert-issuer {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
@@ -619,6 +671,21 @@
                 font-size: 1.2rem;
             }
 
+            /* Certifications */
+            .certifications-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .cert-card {
+                padding: 1.5rem;
+            }
+
+            .cert-card h3 {
+                font-size: 1.1rem;
+                min-height: auto;
+            }
+
             /* Contact */
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -688,6 +755,7 @@
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -882,6 +950,51 @@
                         <li>Data Governance & Security</li>
                         <li>Agile/Scrum Leadership</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" style="background: var(--light);">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <p class="section-subtitle">Industry-recognized credentials demonstrating expertise across AI, data science, and agile methodologies</p>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">📝</div>
+                    <h3>Start Writing Prompts like a Pro</h3>
+                    <div class="cert-issuer">Google</div>
+                    <div class="cert-date">Issued Sep 2025</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>AI and Business Strategy</h3>
+                    <div class="cert-issuer">University of Waterloo</div>
+                    <div class="cert-date">Issued Apr 2025</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Professional Scrum Master I (PSM I)</h3>
+                    <div class="cert-issuer">Scrum.org</div>
+                    <div class="cert-date">Issued Jun 2021</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Pega Certified Data Scientist</h3>
+                    <div class="cert-issuer">Pegasystems</div>
+                    <div class="cert-date">Issued Aug 2020</div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎯</div>
+                    <h3>Pega Certified Decisioning Consultant</h3>
+                    <div class="cert-issuer">Pegasystems</div>
+                    <div class="cert-date">Issued Feb 2020</div>
                 </div>
             </div>
         </div>
